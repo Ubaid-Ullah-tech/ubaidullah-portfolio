@@ -1,0 +1,158 @@
+// home.scss
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; // Background color for the home section
+
+  .left {
+    
+    flex: 1;
+    max-width: 50%;
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10%; // Rounded corners for the image
+    }
+  }
+
+  .right {
+    flex: 2;
+    max-width: 50%;
+    padding: 20px;
+    
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .icons {
+      margin-top: 20px;
+
+      span {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .top-icons,
+      .bottom-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+
+        svg {
+          font-size: 2rem;
+          color: #333;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #007bff; // Change color on hover
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background-color: #110909;
+  }
+
+  // Responsive Design
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    .left,
+    .right {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .right {
+      padding: 10px;
+    }
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .home{
+//       display: flex;
+//       flex-direction: column;
+//    .left{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     top: 5%;
+//     img{
+//       width: 40%;
+//       border-radius: 50%;
+//       margin-top: 2%;
+//       margin-bottom: 6%;
+//     }
+
+//    }
+
+//    .right{
+
+//     h1{
+
+//     }
+
+//     p{
+
+
+//     }
+
+//     .icons{
+
+//         span{
+
+//         }
+
+//         .top-icons{
+
+//         }
+
+//         .bottom-icons{
+
+
+//         }
+//     }
+//    }
+// }
